@@ -1,4 +1,4 @@
-# test_technique_frontend_vuejs
+# test technique frontend vuejs
 
 ## Project setup
 ```
