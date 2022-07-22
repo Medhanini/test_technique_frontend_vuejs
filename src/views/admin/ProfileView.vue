@@ -9,7 +9,7 @@
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;">
             <h5 class="my-3">
-                <!-- {{ data.name }} {{ data.lastName }} -->
+                {{ user.name }} {{ user.lastName }}
             </h5>
             <p class="text-muted mb-1">Full Stack Developer</p>
             <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
@@ -55,7 +55,7 @@
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">
-                    <!-- {{ data.name }} {{ data.lastName }} -->
+                    {{ user.name }} {{ user.lastName }}
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">
-                    <!-- {{ data.email }} -->
+                    {{ user.email }}
                 </p>
               </div>
             </div>
@@ -77,7 +77,7 @@
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">
-                    <!-- {{ data.phoneNumber }} -->
+                    {{ user.phoneNumber }}
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">
-                    <!-- {{ data.login }} -->
+                    {{ user.login }}
                 </p>
               </div>
             </div>
@@ -99,7 +99,7 @@
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">
-                    <!-- {{ data.adress }} -->
+                    {{ user.adress }}
                 </p>
               </div>
             </div>
@@ -180,7 +180,13 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
+  computed: {
+    ...mapState({
+          user: state => state.auth.user,
+    })
+    },
 }
 </script>
 
