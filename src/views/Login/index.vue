@@ -3,28 +3,6 @@
     <div class="container">
       <!---- Navbar -->
       <!-- Outer Row -->
-      <div
-        class="row justify-content-center"
-        v-if="verificationStatus"
-      >
-        <div class="col-xl-10 col-lg-12 col-md-9">
-          <div
-            class="alert alert-dismissible fade show mt-5"
-            v-bind:class="verificationAlertClasses"
-            role="alert"
-          >
-            <div>{{ verificationMessage }}</div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="alert"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        </div>
-      </div>
       <div class="row justify-content-center">
         <div class="col-xl-10 col-lg-12 col-md-9">
           <div class="card o-hidden border-0 shadow-lg my-5">
@@ -112,7 +90,7 @@ export default {
             password:this.form.password
             }).then(  res => {
             this.isLoding = res
-            this.$router.push('/about')
+            this.$router.push('/admin')
             }).catch( err => {
                 console.log(err.message)
                 this.$notify({

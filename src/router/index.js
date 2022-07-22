@@ -53,7 +53,7 @@ router.beforeEach((to, from, next) => {
     // if not, redirect to login page.
     if (store.state.auth.loggedIn == false) {
       next({
-        path: '/login'
+        path: '/'
       })
     } else {
       next()
@@ -64,7 +64,7 @@ router.beforeEach((to, from, next) => {
           next()
         } else {
           next({
-              path: '/'
+              path: '/admin'
             })
         } 
     }
