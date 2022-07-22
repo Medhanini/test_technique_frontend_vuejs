@@ -489,7 +489,7 @@
 
 <script>
 export default {
-  name: "Dashboard",
+  name: "DashboardView",
   components:{
       TheChartBar:() => import('./components/TheChartBar.vue'),
       TheChartBubble:() => import('./components/TheChartBubble.vue'),
