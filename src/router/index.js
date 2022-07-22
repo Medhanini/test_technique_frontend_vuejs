@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import AdminLayout from "../views/admin/layout/index";
 Vue.use(VueRouter)
 
 const routes = [
@@ -34,17 +35,17 @@ const routes = [
   path: "/admin",
   name: "admin",
   component: () => import("../views/admin/DashboardView.vue"),
-  // meta: {
-  //     layout: AdminLayout
-  // }
+  meta: {
+      layout: AdminLayout
+  }
   },
   {
     path: "/admin/profile",
     name: "profile",
     component: () => import("../views/admin/ProfileView.vue"),
-    // meta: {
-    //     layout: AdminLayout
-    // }
+    meta: {
+        layout: AdminLayout
+    }
   },
 ]
 
