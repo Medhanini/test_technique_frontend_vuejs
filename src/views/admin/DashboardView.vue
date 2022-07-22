@@ -6,7 +6,7 @@
       <a
         href="#"
         class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
-        ><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a
+        > Generate Report</a
       >
     </div>
 
@@ -32,9 +32,6 @@
                   $40,000
                 </div>
               </div>
-              <div class="col-auto">
-                <i class="fas fa-calendar fa-2x text-gray-300"></i>
-              </div>
             </div>
           </div>
         </div>
@@ -59,9 +56,6 @@
                 <div class="h5 mb-0 font-weight-bold text-gray-800">
                   $215,000
                 </div>
-              </div>
-              <div class="col-auto">
-                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
               </div>
             </div>
           </div>
@@ -99,9 +93,6 @@
                   </div>
                 </div>
               </div>
-              <div class="col-auto">
-                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-              </div>
             </div>
           </div>
         </div>
@@ -124,9 +115,6 @@
                   Pending Requests
                 </div>
                 <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-              </div>
-              <div class="col-auto">
-                <i class="fas fa-comments fa-2x text-gray-300"></i>
               </div>
             </div>
           </div>
@@ -162,7 +150,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                
               </a>
               <div
                 class="
@@ -212,7 +200,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                
               </a>
               <div
                 class="
@@ -261,7 +249,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                
               </a>
               <div
                 class="
@@ -311,7 +299,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                
               </a>
               <div
                 class="
