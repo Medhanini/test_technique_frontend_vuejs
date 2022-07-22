@@ -8,7 +8,7 @@
         <!-- Start of Topbar -->
         <Topbar />
         <!-- End of Topbar -->
-
+      <TheBreadCrumb />
         <!-- Begin Page Content -->
         <div class="container-fluid">
           <router-view></router-view>
@@ -33,11 +33,13 @@
 
 <script>
 import Topbar from "../components/TopBar";
+import TheBreadCrumb from "../components/TheBreadCrumb";
 
 export default {
   name: "AdminLayout",
   components: {
     Topbar,
+    TheBreadCrumb
   }
 };
 </script>

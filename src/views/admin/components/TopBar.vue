@@ -1,5 +1,5 @@
 <template>
-        <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="container-fluid  navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@
                 </li>
               </ul>
               <div class="form-inline mr-20 my-lg-0">
-                  <div class="dropdown">
+                  <div class="dropdown dropleft">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
                   </a>
