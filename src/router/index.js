@@ -27,6 +27,17 @@ const routes = [
     name: 'register',
     component: () => import('../views/RegisterView')
   },
+  /**
+    * Admin routes
+  */
+  {
+  path: "/admin",
+  name: "admin",
+  component: () => import("../views/admin/DashboardView.vue"),
+  // meta: {
+  //     layout: AdminLayout
+  // }
+},
 ]
 
 const router = new VueRouter({
