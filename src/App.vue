@@ -2,10 +2,6 @@
   <div id="app">
     <notifications group="foo" />
     <component :is="this.$route.meta.layout || 'div'">
-      <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-      </nav>
       <router-view/>
     </component>
   </div>
