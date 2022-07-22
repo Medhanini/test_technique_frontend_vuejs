@@ -174,7 +174,7 @@ export default {
                 this.$store.dispatch('performRegisterAction',
                 this.form
                 ).then( res => {
-                this.$router.push('/about',res)
+                this.$router.push('/',res)
                 }).catch( err => {
                     console.log(err.message)
                     this.error = "There was error during Regestration process"
