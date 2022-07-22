@@ -182,9 +182,7 @@
           </div>
           <!-- Card Body -->
           <div class="card-body">
-            <div class="chart-area">
-              <canvas id="myAreaChart"></canvas>
-            </div>
+              <TheChartBar />
           </div>
         </div>
       </div>
@@ -456,5 +454,8 @@
 <script>
 export default {
   name: "Dashboard",
+  components:{
+      TheChartBar:() => import('./components/TheChartBar.vue'),
+    },
 };
 </script>
