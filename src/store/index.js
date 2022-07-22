@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import auth from './auth'
+
+import VuexPersistence from 'vuex-persist'
 
 Vue.use(Vuex)
+import auth from './auth'
 
 export default new Vuex.Store({
   state: {
@@ -15,5 +17,7 @@ export default new Vuex.Store({
   },
   modules: {
     auth
-  }
+  },
+
+  plugins: [new VuexPersistence().plugin]
 })
