@@ -45,7 +45,7 @@
                           id="exampleInputEmail"
                           aria-describedby="emailHelp"
                           placeholder="Enter Email Address..."
-                          v-model="email"
+                          v-model="form.login"
                         />
                       </div>
                       <div class="form-group">
@@ -54,7 +54,7 @@
                           class="form-control form-control-user"
                           id="exampleInputPassword"
                           placeholder="Password"
-                          v-model="password"
+                          v-model="form.password"
                         />
                       </div>
                       <div class="form-group">
@@ -69,19 +69,15 @@
                           >
                         </div>
                       </div>
-                      <button
-                        type="submit"
+                      <a
+                        href="#"
                         class="btn btn-primary btn-user btn-block"
+                        @click="Submit()"
                       >
                         Login
-                      </button>
+                      </a>
                     </form>
                     <hr />
-                    <div class="text-center">
-                      <router-link class="small" to="/forgot-password"
-                        >Forgot Password?</router-link
-                      >
-                    </div>
                     <div class="text-center">
                       <router-link class="small" to="/register"
                         >Create an Account!</router-link
@@ -101,6 +97,59 @@
 <script>
 export default {
     name: 'LoginView',
+    data() {
+        return {
+            form: {
+                login:'',
+                password:'',
+            }
+        }
+    },
+    methods: {
+         performLogin(){
+            this.$store.dispatch('performLoginAction',{
+            email:this.form.login,
+            password:this.form.password
+            }).then(  res => {
+            this.isLoding = res
+            this.$router.push('/about')
+            }).catch( err => {
+                console.log(err.message)
+                this.$notify({
+                group: 'foo',
+                title: err.message,
+                message: 'le champ login est obligatoiry',
+                type: 'error',
+                duration: 2000,
+              });
+        
+            })
+        },
+        Submit() {
+            if(this.form.login && this.form.password)
+            {
+                this.performLogin()
+            }
+            if(!this.form.login){
+            this.$notify({
+                group: 'foo',
+                title: 'le champ login est obligatoir',
+                message: 'le champ login est obligatoiry',
+                type: 'error',
+                duration: 2000,
+              });
+            }
+            if(!this.form.password){
+                this.$notify({
+                group: 'foo',
+                title: 'le champ password est obligatoir',
+                message: 'le champ password est obligatoir',
+                type: 'error',
+                duration: 2000,
+              });
+            }
+        },
+    }
 }
 </script>
 
