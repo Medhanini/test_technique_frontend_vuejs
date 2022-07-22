@@ -1,12 +1,11 @@
 <template>
   <div id="app">
     <notifications group="foo" />
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-
     <component :is="this.$route.meta.layout || 'div'">
+      <nav>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+      </nav>
       <router-view/>
     </component>
   </div>

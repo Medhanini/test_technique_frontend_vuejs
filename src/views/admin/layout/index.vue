@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import Topbar from "../components/Topbar";
+import Topbar from "../components/TopBar";
 
 export default {
   name: "AdminLayout",
