@@ -37,7 +37,15 @@ const routes = [
   // meta: {
   //     layout: AdminLayout
   // }
-},
+  },
+  {
+    path: "/admin/profile",
+    name: "profile",
+    component: () => import("../views/admin/ProfileView.vue"),
+    // meta: {
+    //     layout: AdminLayout
+    // }
+  },
 ]
 
 const router = new VueRouter({
