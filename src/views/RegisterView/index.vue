@@ -112,7 +112,7 @@
                 </form>
                 <hr />
                 <div class="text-center">
-                  <router-link class="small" to="/login"
+                  <router-link class="small" to="/"
                     >Already have an account? Login!</router-link
                   >
                 </div>
